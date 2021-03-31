@@ -1,0 +1,121 @@
+{
+  "main": {
+    "name": "Ramandeep Sihra",
+    "occupation": "Aspiring BI Data Analyst",
+    "description1": "Financial Systems Assistant - Microsoft Certified Professional",
+    "description2": "Helping companies with their data needs",
+    "image": "profile.jpg",
+    "bio": ["An aspiring BI Data Analyst with 4 years experience in handling data with prestigious companies, such as DB Schenker and Microsoft. I am currently looking for positions where I can",
+    " apply my skills to support companies achieve their targets by tackling technological challenges. In my spare time I like to travel and explore new places."],
+    "contactmessage": "Get in touch with me.",
+    "email": "Ramandeepksihra@gmail.com",
+    "phone": "07773696460",
+    "address": {
+      "street": "90 Town Lane",
+      "city": "London",
+      "state": "UK",
+      "zip": "TW19 7PE"
+    },
+    "resumedownload": "https://ramandeep-sihra.github.io/Ramandeep_Sihra_Resume.pdf",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/ramandeep-sihra/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/ramandeep-sihra",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here are my software and languages skills.",
+    "certifications": [
+      { "school": "Microsoft",
+        "degree": "Microsoft Certified Solutions Associate (MCSA) - SQL Development",
+        "graduated": "2020 - 2021",
+        "description": "",
+        "image": "MCSA-SQL_2016_Database_Development-600x600.jpg"
+      }
+    ],
+    "education": [
+      { 
+        "school": "Brunel University",
+        "degree": "BSc Business Management (Accounting)",
+        "graduated": "2011 - 2014",
+        "description": ""
+      }
+    ],
+    "work": [
+      {
+        "company": "DB Schenker; London, UK",
+        "title": "Financial Systems Assistant",
+        "years": "Jan 2019 - Now",
+        "description": [ "Creating and updating the weekly Basware Invoice Approver report and dashboards.",
+          "Running 5 UK and 3 Ireland daily reports in internal systems for the Shared Service Centre.", 
+          "Supporting 50 global Master Data Management (MDM) teams as a UK MDM Steward support contact.",
+          "Providing data maintenance for global data platforms and databases.",
+          "Conducting accurate validation checks for the creation of financial accounts in SAP and preparation for audit analysis."
+        ]
+      },
+      {
+        "company": "DB Schenker; London, UK",
+        "title": "Finance Administrator",
+        "years": "Aug 2016 - Dec 2018",
+        "description": [ "Processed and validated UK’s supplier mail reaching daily target of 400 invoices.",
+          "Managed supplier disputes and queried 250 invoices on behalf of the branches and fixed daily errors for 150 invoices."
+        ]
+      },
+      {
+        "company": "Microsoft; London, UK",
+        "title": "Partner Incentives Support Analyst",
+        "years": "Dec 2015 - Feb 2016",
+        "description": [ "Analysed, validated, and interpreted 50 incentive requests and provided validation status reports to internal and external stakeholders.",
+        " Performed audit checks on incentive requests and ran 2 MS Excel macro-based reports for data validation.",
+        "Trained internal staff on SharePoint and Dynamic CRM database."
+        ] 
+      }
+    ],
+    "skills": [
+      {
+        "software": "SSMS, SAP-ERP, MS SharePoint, MS Dynamics, MS Excel, MS Access"
+      },
+      {
+        "data_concepts": "Analysis, Visualization, Manipulation, Extraction, Validation, Cleansing, Reporting"
+      },
+      {
+        "languages": "SQL, T-SQL, VBA, Python"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "PC Land SQL Database",
+        "category": "Created a fully functional T-SQL database and queries on it for a scenario based on a fictional PC shop",
+        "image": "project_PC_Land.jpg",
+        "url": "https://github.com/ramandeep-sihra/PC-Land"
+      },
+      {
+        "title": "Star Media Channel Enagement Report",
+        "category": "Created a dashboard based on a fictional media company to produce report using Python, T-SQL and MS Excel",
+        "image": "project_Star_media.jpg",
+        "url": "https://github.com/ramandeep-sihra/Channel-Engagement-Report"
+      },
+      {
+        "title": "Payday Loans Finance Dissertation",
+        "category": "Conducted research and data analysis on the awareness and implication of payday loans.",
+        "image": "project_Dissertation.jpg",
+        "url": "https://github.com/ramandeep-sihra/Dissertation/blob/master/Dissertation.pdf"
+      },
+      {
+        "title": "Iview Invoice Quotation",
+        "category": "Created a user-friendly invoicing application by using Microsoft Excel and VBA.",
+        "image": "project_Iview_invsystem.jpg",
+        "url": "•  https://github.com/ramandeep-sihra/Iview-Security-Database-And-Application"
+      }
+    ]
+  }
+}
