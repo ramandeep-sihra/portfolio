@@ -101,7 +101,7 @@ const languages_skills = [
 
 function Resume({ data }) {
     if (data) {
-        var skillmessage = data.skillmessage;
+        // var skillmessage = data.skillmessage;
         var education = data.education.map(function (education) {
             return <Box bgcolor={"#0a3e61"}><div key={education.school}><h3><WhiteText>{education.school}</WhiteText></h3>
                 <p className="info"><WhiteText>{education.degree}</WhiteText><br></br><em className="date"><WhiteText>{education.graduated}</WhiteText></em></p>
