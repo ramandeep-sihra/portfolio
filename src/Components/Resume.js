@@ -4,7 +4,6 @@ import { Resizable } from "re-resizable";
 import styled from 'styled-components';
 
 const options = {
-    // colors: ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b"],
     enableTooltip: false,
     fontFamily: "impact",
     fontSizes: [40, 60],
@@ -28,7 +27,6 @@ const resizeStyle = {
 
 const software_skills = [
     // text: "SSMS, SAP-ERP, MS SharePoint, MS Dynamics, MS Excel, MS Access"
-
     {
         text: 'SSMS',
         value: 60,
@@ -56,6 +54,7 @@ const software_skills = [
 ]
 
 const data_concepts_skills = [
+    //   "data_concepts": "Analysis, Visualization, Manipulation, Extraction, Validation, Cleansing, Reporting"
     {
         text: 'Analysis',
         value: 70,
@@ -76,10 +75,10 @@ const data_concepts_skills = [
         text: 'Validation',
         value: 65,
     }
-    //   "data_concepts": "Analysis, Visualization, Manipulation, Extraction, Validation, Cleansing, Reporting"
 ]
 
 const languages_skills = [
+    //   "languages": "SQL, T-SQL, VBA, Python"
     {
         text: 'SQL',
         value: 15,
@@ -96,41 +95,39 @@ const languages_skills = [
         text: 'Python',
         value: 10,
     }
-    //   "languages": "SQL, T-SQL, VBA, Python"
 ]
 
 function Resume({ data }) {
     if (data) {
-        // var skillmessage = data.skillmessage;
-        var education = data.education.map(function (education) {
-            return <Box bgcolor={"#0a3e61"}><div key={education.school}><h3><WhiteText>{education.school}</WhiteText></h3>
-                <p className="info"><WhiteText>{education.degree}</WhiteText><br></br><em className="date"><WhiteText>{education.graduated}</WhiteText></em></p>
-                <p><WhiteText>{education.description}</WhiteText></p></div></Box>
+        var education = data.education.map(function (education_arg) {
+            return <Box bgcolor={"#0a3e61"}><div key={education_arg.school}><h3><WhiteText>{education_arg.school}</WhiteText></h3>
+                <p className="info"><WhiteText>{education_arg.degree}</WhiteText><br></br><em className="date"><WhiteText>{education_arg.graduated}</WhiteText></em></p>
+                <p><WhiteText>{education_arg.description}</WhiteText></p></div></Box>
         })
-        var certifications = data.certifications.map(function (certifications) {
-            var certificationImage = 'images/' + certifications.image;
-            return <Box bgcolor={"#0a3e61"}> <div key={certifications.school}><h3><WhiteText>{certifications.school}</WhiteText></h3>
-                <p className="info"><WhiteText>{certifications.degree}</WhiteText><br></br><em className="date"><WhiteText>{certifications.graduated}</WhiteText></em></p>
-                <p>{certifications.description}</p>
+        var certifications = data.certifications.map(function (certifications_arg) {
+            var certificationImage = 'images/' + certifications_arg.image;
+            return <Box bgcolor={"#0a3e61"}> <div key={certifications_arg.school}><h3><WhiteText>{certifications_arg.school}</WhiteText></h3>
+                <p className="info"><WhiteText>{certifications_arg.degree}</WhiteText><br></br><em className="date"><WhiteText>{certifications_arg.graduated}</WhiteText></em></p>
+                <p>{certifications_arg.description}</p>
                  <MCPImage src={certificationImage} width= "150px" alt="certification"></MCPImage></div> </Box>
 
         })
         // let bgcolors = ["#0a3e61", "#0a3e61", "#0a3e61"];
         // let counter_bgcolors = -1;
-        var work = data.work.map(function (work) {
+        var work = data.work.map(function (work_arg) {
             // return <Box bgcolor={bgcolors[++counter_bgcolors]}>
             return <Box bgcolor={"#0a3e61"}>
-                <div key={work.company}>
+                <div key={work_arg.company}>
                     <h3>
-                        <WhiteText>{work.company}</WhiteText>
+                        <WhiteText>{work_arg.company}</WhiteText>
                     </h3>
                     <p className="info">
                         <WhiteText>
-                            {work.title}
-                            <span>&bull;</span> <em className="date">{work.years}</em>
+                            {work_arg.title}
+                            <span>&bull;</span> <em className="date">{work_arg.years}</em>
                         </WhiteText>
                     </p>
-                    <p>{work.description.map(function (description) {
+                    <p>{work_arg.description.map(function (description) {
                         return <li key={description}>{description}</li>
                     })}</p>
                 </div>

@@ -4,7 +4,6 @@ import Footer from './Components/Footer';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Contact from './Components/Contact';
-// import References from './Components/References';
 import Portfolio from './Components/Portfolio';
 
 function App() {

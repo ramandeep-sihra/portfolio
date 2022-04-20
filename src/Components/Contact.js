@@ -32,9 +32,6 @@ const Contact = ({ data }) => {
 
                             <div>
                                 <button type='submit' onClick={handleClick} className="submit">Submit</button>
-                                <span id="image-loader">
-                                    <img alt="" src="images/loader.gif" />
-                                </span>
                             </div>
                         </fieldset>
                     </form>
@@ -44,23 +41,6 @@ const Contact = ({ data }) => {
                         <i className="fa fa-check"></i>Your message was sent, thank you!<br />
                     </div>
                 </div>
-
-                {/* <aside className="four columns footer-widgets">
-                    <div className="widget widget_contact">
-
-                        <h4>Address and Phone</h4>
-                        <p className="address">
-                            {data?.name}<br />
-                            {data?.address.street} <br />
-                            {data?.address.city}, {data?.address.state} {data?.address.zip}<br />
-                            <span>{data?.phone}</span>
-                        </p>
-                    </div>
-
-                    <div className="widget widget_tweets">
-
-                    </div>
-                </aside> */}
             </div>
         </section>
     );

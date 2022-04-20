@@ -1,13 +1,8 @@
-// import React, { Component } from 'react';
 import React from 'react';
 import TypeWriter from "react-typewriter";
 
 
-// class Header extends Component {
 function Header({ data }) {
-//   render() {
-
-   //  if(this.props.data){
     if(data){
       var name = data.name;
       var occupation = data.occupation;
@@ -32,7 +27,6 @@ function Header({ data }) {
             <li><a className="smoothscroll" href="#about">About</a></li>
 	         <li><a className="smoothscroll" href="#resume">Resume</a></li>
             <li><a className="smoothscroll" href="#portfolio">Projects</a></li>
-            {/* <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li> */}
             <li><a className="smoothscroll" href="#contact">Contact</a></li>
          </ul>
 
@@ -59,8 +53,6 @@ function Header({ data }) {
 
    </header>
     );
-//   }
 }
 
 export default Header;
-
